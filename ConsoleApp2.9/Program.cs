@@ -20,8 +20,7 @@ namespace ConsoleApp2._9
                     {
                         amountOfNumbers++;
                     }
-                }
-                               
+                }                               
             }
             Console.WriteLine(amountOfNumbers);
         }
