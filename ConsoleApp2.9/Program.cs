@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ConsoleApp2._9
 {
@@ -6,13 +6,18 @@ namespace ConsoleApp2._9
     {
         static void Main(string[] args)
         {
+            int lowerRandom = 1;
+            int upperRandom = 27;
+            int minThreeDigit = 100;
+            int maxThreeDigit = 999;
+
             Random random = new Random();
-            int number = random.Next(1, 27);
+            int number = random.Next(lowerRandom, upperRandom);
             int amountOfNumbers = 0;
 
             Console.WriteLine(number);
             
-            for (int i = 100; i < 999; i++)
+            for (int i = minThreeDigit; i < maxThreeDigit; i++)
             {
                 for(int j = i; j >= 0; j-= number)
                 {
@@ -20,7 +25,8 @@ namespace ConsoleApp2._9
                     {
                         amountOfNumbers++;
                     }
-                }                               
+                }
+                               
             }
             Console.WriteLine(amountOfNumbers);
         }
