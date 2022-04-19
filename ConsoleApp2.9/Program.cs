@@ -6,13 +6,14 @@ namespace ConsoleApp2._9
     {
         static void Main(string[] args)
         {
+            Random random = new Random();
+            int number = random.Next(lowerRandom, upperRandom);
+            
             int lowerRandom = 1;
             int upperRandom = 27;
             int minThreeDigit = 100;
             int maxThreeDigit = 999;
-
-            Random random = new Random();
-            int number = random.Next(lowerRandom, upperRandom);
+            
             int amountOfNumbers = 0;
 
             Console.WriteLine(number);
@@ -25,9 +26,9 @@ namespace ConsoleApp2._9
                     {
                         amountOfNumbers++;
                     }
-                }
-                               
+                }                               
             }
+            
             Console.WriteLine(amountOfNumbers);
         }
     }
